@@ -281,11 +281,11 @@ body{
 }
 
 
-.box-gt6:hover img{
+.box-gta6:hover img{
     transform: scale(1.2);
 }
 
- .text-gt6 a{
+ .text-gta6 a{
     z-index: 1;
     position: absolute;
     text-align: center;
