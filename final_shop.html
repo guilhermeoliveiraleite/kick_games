@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kick Games</title>
+        <link rel="stylesheet" href="css/carrossel.css">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/estilo-form.css">
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/slider.css">
+        <link rel="stylesheet" href="css/estilo-shop.css">
+        <link rel="stylesheet" href="css/responsivo.css">
+
+        <script src="js/codigo_slider.js" defer></script>
+        <script src="js/scroll.js" defer></script>
+        <script src="js/carrossel.js" defer></script>
+        <script src="js/scrolltop.js"></script>
+        <script src="js/jquery-3.7.0.js"></script>
+        <script src="js/jquery.mask (1).js"></script>
+        <script src="js/mascara.js"></script>
+        <script src="js/viacep.js"></script>
+        <script src="js/validacao.js" defer></script>
+        
+    </head>
+    <body>
+        
+        <div id="header">
+            <div id="menu">
+                <input type="checkbox" id="btt_menu">
+                <label for="btt_menu"> &#9776;</label>
+                <div id="nav">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="" class="drop_btt">Menu &#9660;</a>
+                            <div class="dropdown_content">
+                                <a href="index.html">Home</a>
+                                <a href="resultados.html">Resultados</a>
+                                <a href="trailer.html">Trailer</a>
+                                <a href="hardware.html">Hardware</a>
+                                <a href="#">Contato</a>
+                                <span></span>
+                            </div>
+                        </li>
+                        <li><a href="esports.html">Esports</a></li>
+                        <li><a href="artigo.html">Artigos</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div id="logo_img">
+                <a href="index.html">
+                <img src="img/logo.png" alt="">
+                </a>
+               </div>
+            
+        </div>
+            
+        
+       
+        <div id="espaco-cinza">
+        </div>
+
+        <div class="container-form">
+            <div class="box-shop">
+                <div id="box-shop-final">
+                    <p id="f_alert">
+                        Os campos não foram <br> preenchidos corretamente!
+                    </p>
+                    <!-- <p id="f_alert2">
+                        Obrigado pela compra ! 
+                    </p> -->
+                    <br>
+                    <h3>Seus dados</h3>
+                    <form action="">
+                    <label for="">Nome</label>
+                    <input type="text" id="i_nome" required>
+
+                    <label for="">Telefone</label>
+                    <input type="text" id="i_telefone" id="i_telefone" required>
+
+                    <h3>Seu Endereço</h3>
+                    <label for="">CEP</label>
+                    <input type="text" id="i_cep" placeholder="00000-000" onblur="pesquisa_cep(this.value)" required>
+        
+                    <label for="">Rua</label>
+                    <input type="text" id="i_rua">
+        
+                    <label for="">Bairro</label>
+                    <input type="text" id="i_bairro">
+        
+                    <label for="">Cidade</label>
+                    <input type="text" id="i_cidade">
+        
+                    <label for="">Estado</label>
+                    <input type="text" id="i_estado">
+
+                    <h3>Forma de pagamento</h3>
+                    <label for="">Selecione:</label>
+                    <select name="" id="">
+                        <option value="">Boleto</option>
+                        <option value="">Pix</option>
+                        <option value="">Cartão</option>
+                    </select>
+                    
+                    <br>
+                    
+                    <input type="submit" value="Concluir" id="btt" onclick="validacao()">
+                    </form>
+                    
+                </div>
+             </div>
+            
+       
+
+    </div>
+
+    <div id="scroll-top" onclick="scrolltop()">Top ↑</div>
+
+ <div id="footer">
+            <div id="conteudo_footer">
+                <img src="img/logo.png" alt="">
+            </div>
+                <div id="cop_footer">Copyright 2024 - Kick Games. Todos os direitos reservados.</div>
+                <div id="contato_footer">
+                    
+                    <a href="">Contato</a>
+        </div>
+        
+    
+ </div>
+
+        
+    </body>
+</html>
