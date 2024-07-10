@@ -1,0 +1,83 @@
+#box-shop-final{
+    left: 0;
+    margin: auto;
+    background-color: #ffffff;
+    width: max-content;
+    padding: 10px;
+    border-radius: 10px;
+    }
+
+#box-shop-final input:not(#btt){
+    display: block;
+    margin-bottom: 10px;
+    width: 240px;
+    height: 25px;
+    }
+
+#btt{
+    cursor: pointer;
+    margin-top: 20px;
+    width: 248px;
+    height: 30px;
+    border: none;
+    background-color: #f87800;
+    color: #000000;
+    transition: 0.5s;
+    border-radius: 10px;
+    }
+
+#btt:hover{
+    background-color: #fc7a00cb;
+    }
+
+.box-shop{
+    
+    max-width: 1000px;
+    max-height: 700px;
+    margin: auto;
+    
+    
+    }
+
+.container-form{
+    padding: 20px;
+    background-color: #333;
+    text-align: center;
+    display: flex;
+    height: 80vh;
+    
+}
+
+
+/* .container{
+    width: 800px;
+    height: 600px;
+    text-align: center;
+
+    } */
+
+/* .container img{
+    width: 500px;
+    height: 300px;
+    margin-top: 30px;
+    } */
+
+.btt-index{
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: center;
+    width: 200px;
+    height: 25px;
+    text-align: center;
+    background-color: #f87800;
+    border-radius: 20px;
+    border: none;
+    transition: 0.5s;
+    }
+
+.btt-index:hover{
+    background-color: #fc7a00cb;
+    }
+
+
+

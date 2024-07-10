@@ -1,0 +1,51 @@
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .marcas {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+  }
+  
+  .marcas:before,
+  .marcas:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .marcas:before {
+    left: 0;
+    background: linear-gradient(to left, #ffffff00, white);
+  }
+  
+  .marcas:after {
+    right: 0;
+    background: linear-gradient(to right, #ffffff00, white);
+  }
+  
+  .marcas:hover .marcas-slide {
+    animation-play-state: paused;
+  }
+  
+  .marcas-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+  
+  .marcas-slide img {
+    height: 50px;
+    margin: 0 40px;
+  }

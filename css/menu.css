@@ -1,0 +1,198 @@
+
+body{
+    background-color: #ffffff;
+
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+}
+
+
+
+
+#logo_img img{
+    width: 100px;
+    
+}
+#header{
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    align-items: center;
+    align-self: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 40px;
+    transition: 4s;
+    
+}
+/* efeito scroll */
+#header.scroll{
+    background-color: #f87800e3;
+    z-index: 1;
+    transition: 4s;
+    padding: 10px;
+}
+
+#header.scroll a{
+    color:#fff
+
+    
+}
+
+#header.scroll img{
+    width: 60px;
+    z-index: 1;
+
+}
+
+
+
+#header.scroll .dropdown_content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #f87800e3;
+    min-width: 160px;
+}
+
+#header.scroll li a, .drop_btt{
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+#header.scroll .dropdown_content a{
+    color: #000000;
+    padding: 14px 16px;
+    display: block;
+    text-align: center;
+}
+
+#header.scroll .dropdown_content a:hover{
+    background-color: #fdfdfd;
+   
+}
+
+#header.scroll .dropdown:hover .dropdown_content{
+    display: block;
+}
+/* fim efeito scroll */
+
+
+
+
+
+/* linha dinamica */
+#nav a{
+    color: #f87800;
+    text-decoration: none;
+    padding: 0px 50px 10px 0;
+    font-size: 20px;
+    position: relative;
+    
+    
+}
+
+#nav a::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: #e2e2e2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+#nav a:hover::after{
+    width: 100%;
+    
+}
+
+/* fim linha dinamica */
+
+
+
+
+
+
+#logo a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 50px;
+}
+#menu{
+    display: flex;
+    justify-content: center;
+    
+    
+    
+}
+#btt_menu{
+    display: none;
+    
+}
+label[for="btt_menu"]{
+    display: none;
+    position: absolute;
+    padding: 10px;
+    color: #f87800;
+    font-size: 50px;
+    cursor: pointer;
+    
+    
+}
+
+ul{
+    list-style-type: none;
+    margin: 1px;
+    padding: 1px;
+    overflow: hidden;
+    
+}
+li{
+    float: left;
+    
+    margin: 0px 70px;
+}
+
+li a, .drop_btt{
+    display: inline-block;
+    color: #fd5d00;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.dropdown_content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #000000;
+    min-width: 160px;
+}
+
+.dropdown_content a{
+    color: #000000;
+    padding: 14px 16px;
+    display: flex;
+    text-align: center;
+   
+    
+}
+
+
+.dropdown:hover .dropdown_content{
+    display: block;
+}
+

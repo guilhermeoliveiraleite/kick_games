@@ -1,0 +1,75 @@
+
+@media (max-width: 1200px){
+    #main{
+        display: none;
+    }
+
+    #box-shop-final{
+        margin-top: -25px;
+    }
+
+   
+
+   .conteudo-noticia iframe{ width: 90%;
+    
+   }
+
+    .conteudo-destaque{
+        display: none;
+    }
+    #espaco-cinza {
+        margin-top: 50px;
+    }
+ .conteudo-destaque-responsivo{
+    display: flex;
+ }
+}
+
+@media (max-width: 800px){
+    .img-noticia img {
+        width: 580px;
+        height: 400px;
+        
+    }
+
+    iframe{width: 90%}
+}
+
+
+
+@media (max-width: 600px){
+    .img-noticia img {
+        width: 480px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 500px){
+    .img-noticia img {
+        width: 380px;
+        height: 300px;
+    }
+    iframe{width: 90%}
+}
+
+@media (max-width: 425px){
+    #logo_img img{
+        width: 60px;
+
+    }
+   
+    .img-noticia img {
+        width: 350px;
+        height: 150px;
+    }
+     
+ .resultados-box img{
+    width: 350px;
+ }   
+    
+ iframe{width: 90%}
+   
+}
+
+
+
